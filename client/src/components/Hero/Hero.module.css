@@ -1,0 +1,5 @@
+.backgroundImage {
+  background-image: url("../../assets/hero_bg.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+}

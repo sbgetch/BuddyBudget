@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+  h1 {
+    @apply font-roboto text-5xl font-extrabold text-emerald-700 lg:text-8xl;
+  }
+  h2 {
+    @apply font-roboto text-emerald-700 text-3xl font-extrabold lg:text-4xl;
+  }
+  h3 {
+    @apply font-roboto italic text-lg font-bold lg:text-2xl;
+  }
+}
+
+@layer components {
+  .registerBtn {
+    @apply flex justify-center items-center
+    bg-green-500 rounded-lg
+    text-white font-bold text-xl 
+    hover:bg-green-600;
+  }
+
+  .navBtn {
+    @apply font-medium text-lg
+    hover:text-gray-400;
+  }
+
+  .loginBtn {
+    @apply flex justify-center items-center
+    bg-blue-500 rounded-md
+    text-white font-bold text-xl 
+    hover:bg-blue-600;
+  }
+
+  .budgetBtn {
+    @apply flex justify-center items-center
+    bg-teal-500 rounded-md
+    text-white font-bold text-lg
+    hover:bg-teal-600;
+  }
+
+  .expenseBtn {
+    @apply flex justify-center items-center
+    bg-red-400 rounded-md
+    text-white font-bold text-lg
+    hover:bg-red-500;
+  }
+
+  .redErrorText {
+    @apply text-red-500 text-sm font-bold pt-4;
+  }
+}
